@@ -19,7 +19,74 @@
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
+        <h1>Blog</h1>
     </header>
-    
+    <main>
+        <section class="section1-blog">
+            <div class="blog-post">
+                <div>
+                    <img src="./assets/blog-post-image.jpg" alt="A close-up of the prow of a tied-up boat.">
+                </div>
+                <article>
+                    <h2>Next Destination</h2>
+                    <p>Monday October 30, 2019 by Sulaire<span></span>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.<span></span>In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu.<span></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at suscipit.<span></span>Praesent facilisis dolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula.</p>
+                </article>                
+            </div>
+        </section>
+        <section class="section2-blog">
+            <h2>Comments:</h2>
+            <div class="comment1">
+                <div class="comment1-image">
+                    <img src="./assets/comment-1.jpg" alt="A man smiling.">
+                </div>
+                <article>
+                    <p><span>Tuesday October 9th, 2019 by Ali</span>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus..</p>
+                </article>
+            </div>
+            <div class="comment2">
+                <div class="comment2-image">
+                    <img src="./assets/comment-2.jpg" alt="A woman grinning widely with her eyes closed">
+                </div>
+                <article>
+                    <p><span>Wednesday October 10th, 2019 by Lisa</span>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula.</p>                   
+                </article>
+            </div>
+        </section>
+        <section class="section3-blog">
+            <form action="submit" method="POST" name="contact-form">
+                <label for="user-name">Enter Your Name</label>
+                <input type="text" id="user-name" name="user-name" placeholder="Name" required>
+
+                <label for="user-email">Enter Your Email</label>
+                <input type="email" id="user-email" name="user-email" placeholder="Email address" required>
+                <!-- Eventually can remove cols and rows to style with width and height using CSS-->
+                <label for="user-comment">Write Your Comment</label>
+                <textarea name="user-content" id="user-comment" cols="30" rows="10" placeholder="Comment"></textarea>
+
+                <button type="submit">Post Comment</button>
+            </form>
+        </section>
+        <aside>
+            <div class="aside-image">
+                <img src="./assets/blog-side-image.jpg" alt="A view of sails from the deck of a large wooden ship.">
+            </div>
+            <div class="mission-statement">
+                <h3>Our Mission</h3>
+                <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. Find out more.</p>
+            </div>
+            <div class="recent-posts">
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li>Donec facilisis tortor ut</li>
+                    <li>Augue lacinia at viverra</li>
+                    <li>Semper sed sapien metus</li>
+                    <li>Scelerisque nec pharetra id</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <p>Copyright © 2021 Juno College</p>
+    </footer>    
 </body>
 </html>
