@@ -282,3 +282,175 @@ p {
   letter-spacing: 0.05rem;
   line-height: 1.4rem;
 }
+
+.header-home {
+  background-image: url(../assets/home-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-contact {
+  background-image: url(../assets/contact-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+.header-blog {
+  background-image: url(../assets/blog-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
+}
+
+.nav-home ul,
+.nav-contact ul,
+.nav-blog ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem 0 4rem 0;
+}
+.nav-home ul li,
+.nav-contact ul li,
+.nav-blog ul li {
+  margin: 0 1.5rem;
+}
+.nav-home ul li a,
+.nav-contact ul li a,
+.nav-blog ul li a {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  line-height: 1.45rem;
+  padding-bottom: 0.25rem;
+}
+.nav-home ul li a:hover, .nav-home ul li a:focus,
+.nav-contact ul li a:hover,
+.nav-contact ul li a:focus,
+.nav-blog ul li a:hover,
+.nav-blog ul li a:focus {
+  border-bottom: 3px solid #FDD908;
+}
+.nav-home ul li:first-child,
+.nav-contact ul li:first-child,
+.nav-blog ul li:first-child {
+  margin-left: 0;
+}
+.nav-home ul li:last-child,
+.nav-contact ul li:last-child,
+.nav-blog ul li:last-child {
+  margin-right: 0;
+}
+
+h1 {
+  font-size: 3.95rem;
+  text-transform: uppercase;
+  font-family: "IM Fell English", serif;
+}
+
+.move-h1-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+.move-h1-image h1 {
+  color: #FDD908;
+  margin-top: 25vh;
+  margin-bottom: 3rem;
+}
+.move-h1-image h1 span {
+  display: block;
+}
+
+.header-boat-image {
+  position: absolute;
+  top: 2.5vh;
+  right: -250px;
+}
+
+.header-contact h1,
+.header-blog h1 {
+  color: white;
+}
+
+h2,
+h4 {
+  font-family: "IM Fell English", serif;
+  color: #0D457F;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+}
+
+.icons-h2s {
+  background-color: #EAFEFC;
+}
+.icons-h2s .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 20vh;
+  padding-bottom: 15vh;
+}
+.icons-h2s .wrapper .marker,
+.icons-h2s .wrapper .users,
+.icons-h2s .wrapper .file,
+.icons-h2s .wrapper .phone {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 2rem;
+}
+.icons-h2s .wrapper .marker i,
+.icons-h2s .wrapper .users i,
+.icons-h2s .wrapper .file i,
+.icons-h2s .wrapper .phone i {
+  background-color: #FDD908;
+  color: #0D457F;
+  border-radius: 50%;
+  display: block;
+  font-size: 1rem;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+.icons-h2s .wrapper .marker .marker-description,
+.icons-h2s .wrapper .marker .users-description,
+.icons-h2s .wrapper .marker .file-description,
+.icons-h2s .wrapper .marker .phone-description,
+.icons-h2s .wrapper .users .marker-description,
+.icons-h2s .wrapper .users .users-description,
+.icons-h2s .wrapper .users .file-description,
+.icons-h2s .wrapper .users .phone-description,
+.icons-h2s .wrapper .file .marker-description,
+.icons-h2s .wrapper .file .users-description,
+.icons-h2s .wrapper .file .file-description,
+.icons-h2s .wrapper .file .phone-description,
+.icons-h2s .wrapper .phone .marker-description,
+.icons-h2s .wrapper .phone .users-description,
+.icons-h2s .wrapper .phone .file-description,
+.icons-h2s .wrapper .phone .phone-description {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.icons-h2s .wrapper .marker p,
+.icons-h2s .wrapper .users p,
+.icons-h2s .wrapper .file p,
+.icons-h2s .wrapper .phone p {
+  padding-top: 1rem;
+}

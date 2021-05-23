@@ -53,6 +53,144 @@ p {
 
 // Header Styling //
 
+.header-home {
+    background-image: url(../assets/home-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // height: 75vh;
+}
 
+.header-contact {
+    background-image: url(../assets/contact-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
 
+.header-blog {
+    background-image: url(../assets/blog-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+}
+
+.nav-home ul,
+.nav-contact ul,
+.nav-blog ul {
+    display: flex;
+    padding: 3rem 0 4rem 0;
+    li {
+        margin: 0 1.5rem;
+        a {
+            color: white;
+            font-weight: bold;
+            letter-spacing: 0.05rem;
+            line-height: 1.45rem;
+            padding-bottom: 0.25rem;
+            &:hover,
+            &:focus {
+                border-bottom: 3px solid $secondary;
+            }
+        }
+    }
+    li:first-child {
+        margin-left: 0;
+    }
+    li:last-child {
+        margin-right: 0;
+    }
+}
+
+h1 {
+    font-size: 3.95rem;
+    text-transform: uppercase;
+    font-family: $styling-font;
+}
+
+.move-h1-image {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.move-h1-image h1 {
+    color: $secondary;
+    margin-top: 25vh;
+    margin-bottom: 3rem;
+    span {
+        display: block;
+    }
+}
+
+.header-boat-image {
+    position: absolute;
+    top: 2.5vh;
+    right: -250px;
+}
+
+.header-contact h1,
+.header-blog h1 {
+    color: white;
+}
+
+// Main General Styling Across Pages //
+
+h2, 
+h4 {
+    font-family: $styling-font;
+    color: $primary;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+}
+
+// Styling Separate Sections //
+
+.icons-h2s {
+    background-color: $tertiary;
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 20vh;
+        padding-bottom: 15vh;
+        .marker, 
+        .users, 
+        .file, 
+        .phone {
+            flex-basis: 50%;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 2rem;
+            i {
+                background-color: $secondary;
+                color: $primary;
+                border-radius: 50%;
+                display: block;
+                font-size: 1rem;
+                width: 2rem;
+                height: 2rem;
+                margin-right: 1rem;
+                text-align: center;
+                padding-top: 0.5rem;
+            }
+            .marker-description,
+            .users-description,
+            .file-description,
+            .phone-description {
+                flex: 1;
+            }
+            p {
+                padding-top: 1rem;
+            }
+        }
+    }
+}
+
+// .marker, 
+// .users, 
+// .file, 
+// .phone {
+//     h2 {
+
+//     }
+// }
 
