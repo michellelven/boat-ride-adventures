@@ -18,7 +18,7 @@ h4,
 nav ul,
 p,
 a,
-.gallery ul,
+ul.gallery,
 input,
 textarea {
     padding: 0;
@@ -27,7 +27,7 @@ textarea {
 
 .wrapper {
     max-width: 1200px;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -143,8 +143,23 @@ h4 {
     text-transform: uppercase;
 }
 
-// Styling Separate Sections //
-// Section 1: Icons and H2s //
+.yellow-button {
+    color: $primary;
+    font-family: $styling-font;
+    background-color: $secondary;
+    text-transform: uppercase;
+    line-height: 2.08rem;
+    padding: 0.5rem;
+    border: 3px solid transparent;
+    &:hover,
+    &:focus {
+        border: 3px solid $primary;
+        background-color: $tertiary;
+    }
+}
+
+// Styling Sections Individually//
+// Home Section 1: Icons and H2s //
 
 .icons-h2s {
     background-color: $tertiary;
@@ -186,31 +201,106 @@ h4 {
     }
 }
 
-// Section 2 - Home: Programs and Locations //
+// Home Section 2: Programs and Locations //
 
-.section2-home {
-    background-color: $primary;
+.section2-home-programs-locations {
+    background-color: $primary;   
 }
 
-.image-programs,
-.locations-image {
-    display: flex;
+h3 {
+    font-family: $styling-font;
+    font-size: 2rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.06rem;
+    text-transform: uppercase;
 }
 
-// Section 3 - Home: Vacation Days //
+h3,
+p {
+    color: white;
+}
 
-.section3-home {
+.section2-wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem 12rem;
+}
+
+.left-image img{
+    box-shadow: 1rem 1rem 0.05rem $secondary;
+}
+
+.right-image img{
+    box-shadow: -1rem 1rem 0.05rem $secondary;
+}
+
+
+// Home Section 3: Vacation Days //
+
+.section3-home-vacation {
     background-color: $tertiary;
-    height: 500px;
     text-align: center;
+    padding-bottom: 6rem;
     h4 {
         padding-top: 15vh;
         padding-bottom: 2rem;
     }
     p {
-        padding-bottom: 2rem;
+        padding: 0 4rem 2rem 4rem;
     }
 }
+
+// Home Section 5: Contest // 
+
+.section5-home-contest{
+    background-color: $tertiary;
+    .contest-flex {
+        display: flex;
+        align-items: center;
+        padding: 6rem 0 5rem 0;
+        .contest-image {
+            flex: 1;
+            box-shadow: -1rem 1rem 0.05rem $secondary;
+        }
+        .contest-info {
+            padding-left: 5rem;
+            flex: 3;
+            p {
+                padding: 1rem 0 1.25rem 0;
+            }
+        }
+    }
+}
+
+// Home Section 6: Gallery Styling // 
+
+.section6-home-gallery {
+    background-color: $primary;
+}
+
+ul.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    li {
+        padding: 5rem 0;
+    }
+}
+
+// Footer Styling Across ALL Pages // 
+
+footer {
+    text-align: center;
+    background-color: $secondary;
+    color: $primary;
+    padding: 0.5rem 0;
+}
+
+
+
+
 
 
 
