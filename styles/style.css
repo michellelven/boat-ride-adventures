@@ -454,3 +454,27 @@ h4 {
 .icons-h2s .wrapper .phone p {
   padding-top: 1rem;
 }
+
+.section2-home {
+  background-color: #0D457F;
+}
+
+.image-programs,
+.locations-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section3-home {
+  background-color: #EAFEFC;
+  height: 500px;
+  text-align: center;
+}
+.section3-home h4 {
+  padding-top: 15vh;
+  padding-bottom: 2rem;
+}
+.section3-home p {
+  padding-bottom: 2rem;
+}

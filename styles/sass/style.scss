@@ -144,6 +144,7 @@ h4 {
 }
 
 // Styling Separate Sections //
+// Section 1: Icons and H2s //
 
 .icons-h2s {
     background-color: $tertiary;
@@ -185,12 +186,32 @@ h4 {
     }
 }
 
-// .marker, 
-// .users, 
-// .file, 
-// .phone {
-//     h2 {
+// Section 2 - Home: Programs and Locations //
 
-//     }
-// }
+.section2-home {
+    background-color: $primary;
+}
+
+.image-programs,
+.locations-image {
+    display: flex;
+}
+
+// Section 3 - Home: Vacation Days //
+
+.section3-home {
+    background-color: $tertiary;
+    height: 500px;
+    text-align: center;
+    h4 {
+        padding-top: 15vh;
+        padding-bottom: 2rem;
+    }
+    p {
+        padding-bottom: 2rem;
+    }
+}
+
+
+
 
