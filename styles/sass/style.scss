@@ -57,6 +57,7 @@ p {
     background-image: url(../assets/home-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     // height: 75vh;
 }
 
@@ -108,16 +109,10 @@ h1 {
     text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.8);
 }
 
-.move-h1-image {
-    display: flex;
-    align-items: flex-end;
-    position: relative;
-}
-
-.move-h1-image h1 {
+.header-home h1 {
     color: $secondary;
     margin-top: 25vh;
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
     span {
         display: block;
     }
@@ -125,8 +120,10 @@ h1 {
 
 .header-boat-image {
     position: absolute;
-    top: 2.5vh;
-    right: -250px;
+    top: 20vh;
+    right: 0;
+    width: 55vw;
+    max-width: 900px;
 }
 
 .header-contact h1,
@@ -383,7 +380,6 @@ main {
     box-shadow: 1rem 1rem 0.05rem $secondary;
     position: absolute;
     top: -375px;
-    right: -100px;
     button {
         padding: 0;
         cursor: pointer;
