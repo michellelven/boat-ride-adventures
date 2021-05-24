@@ -347,6 +347,7 @@ h1 {
   font-size: 3.95rem;
   text-transform: uppercase;
   font-family: "IM Fell English", serif;
+  text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.8);
 }
 
 .move-h1-image {
@@ -397,7 +398,7 @@ h4 {
   border: 3px solid transparent;
 }
 .yellow-button:hover, .yellow-button:focus {
-  border: 3px solid #0D457F;
+  border: 3px solid #FDD908;
   background-color: #EAFEFC;
 }
 
@@ -473,35 +474,54 @@ h4 {
   background-color: #0D457F;
 }
 
-h3 {
-  font-family: "IM Fell English", serif;
-  font-size: 2rem;
-  line-height: 2.9rem;
-  letter-spacing: 0.06rem;
-  text-transform: uppercase;
-}
-
-h3,
-p {
-  color: white;
-}
-
 .section2-wrapper {
   max-width: 1600px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem 12rem;
+  gap: 4rem 10vw;
+  padding-bottom: 4rem;
+}
+.section2-wrapper h3 {
+  font-family: "IM Fell English", serif;
+  font-size: 2rem;
+  line-height: 2.9rem;
+  letter-spacing: 0.06rem;
+  text-transform: uppercase;
+  color: white;
+}
+.section2-wrapper p {
+  color: white;
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
+.right-programs {
+  padding: 5rem 8rem 0 0;
+}
+
+.left-locations {
+  text-align: right;
+  padding: 2rem 0 0 8rem;
+}
+
+.left-image,
+.right-image {
+  position: relative;
 }
 
 .left-image img {
   -webkit-box-shadow: 1rem 1rem 0.05rem #FDD908;
           box-shadow: 1rem 1rem 0.05rem #FDD908;
+  position: absolute;
+  top: -2rem;
 }
 
 .right-image img {
   -webkit-box-shadow: -1rem 1rem 0.05rem #FDD908;
           box-shadow: -1rem 1rem 0.05rem #FDD908;
+  position: absolute;
+  top: 2rem;
 }
 
 .section3-home-vacation {
@@ -510,7 +530,7 @@ p {
   padding-bottom: 6rem;
 }
 .section3-home-vacation h4 {
-  padding-top: 15vh;
+  padding-top: 20vh;
   padding-bottom: 2rem;
 }
 .section3-home-vacation p {
@@ -559,6 +579,174 @@ ul.gallery {
 }
 ul.gallery li {
   padding: 5rem 0;
+}
+
+.header-contact h1 {
+  padding-top: 4rem;
+}
+
+main {
+  background-color: #EAFEFC;
+}
+
+.main-contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6rem 0 12rem 0;
+}
+
+.contact-icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact-icons ul li {
+  margin: 0 0.5rem;
+  padding-bottom: 1rem;
+}
+.contact-icons ul li a {
+  color: #0D457F;
+  font-size: 1.25rem;
+}
+.contact-icons ul li a:hover, .contact-icons ul li a:focus {
+  border-bottom: 3px solid #FDD908;
+}
+.contact-icons ul li:first-child {
+  margin-left: 0;
+}
+.contact-icons ul li:last-child {
+  margin-right: 0;
+}
+
+.addresses a {
+  color: #0D457F;
+}
+.addresses a:hover, .addresses a:focus {
+  border-bottom: 3px solid #FDD908;
+}
+
+.addresses p {
+  padding-top: 1.5rem;
+}
+.addresses p span {
+  display: block;
+}
+
+.contact-info {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.move-form {
+  position: relative;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.contact-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #0D457F;
+  padding: 3rem;
+  -webkit-box-shadow: 1rem 1rem 0.05rem #FDD908;
+          box-shadow: 1rem 1rem 0.05rem #FDD908;
+  position: absolute;
+  top: -375px;
+  right: -100px;
+}
+.contact-form button {
+  padding: 0;
+  cursor: pointer;
+}
+
+.name-address-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+input,
+textarea {
+  background-color: #0D457F;
+  border-style: none;
+  outline: none;
+  padding: 1rem;
+  color: white;
+}
+
+input[type=text],
+input[type=email] {
+  border-bottom: 2px solid #FDD908;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+input[type=text]::-webkit-input-placeholder, input[type=email]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: white;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+}
+
+input[type=text]::-moz-placeholder, input[type=email]::-moz-placeholder, textarea::-moz-placeholder {
+  color: white;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+}
+
+input[type=text]:-ms-input-placeholder, input[type=email]:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+}
+
+input[type=text]::-ms-input-placeholder, input[type=email]::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+}
+
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+textarea::placeholder {
+  color: white;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+}
+
+input[type=text] {
+  margin-right: 0.75rem;
+}
+
+input[type=email] {
+  margin-left: 0.75rem;
+}
+
+.name-address-flex {
+  padding-bottom: 2rem;
+}
+
+textarea {
+  resize: none;
+  border: 2px solid #FDD908;
+  margin-bottom: 2rem;
+  padding-bottom: 0;
 }
 
 footer {

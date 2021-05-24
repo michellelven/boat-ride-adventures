@@ -25,32 +25,38 @@
         </div>
     </header>
     <main>
-        <div class="contact-info">
-            <nav class="contact-icons">
-                <ul>
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                </ul>
-            </nav>
-            <div class="addresses">
-                <a href="">info@email.com</a>
-                <p>123-456-7890<span></span>123 Queen Street West, Unit 10<span></span>Toronto, Ontario<span></span>M5V2D5</p>
+        <div class="wrapper main-contact-form">
+            <div class="contact-info">
+                <nav class="contact-icons">
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                </nav>
+                <div class="addresses">
+                    <a href="">info@email.com</a>
+                    <p>123-456-7890<span></span>123 Queen Street West, Unit 10<span></span>Toronto, Ontario<span></span>M5V2D5</p>
+                </div>
+            </div>
+            <div class="move-form">
+                <form action="submit" method="POST" name="contact-form" class="contact-form">
+                    <div class="name-address-flex">
+                        <label for="user-name" class="sr-only">Enter Your Name</label>
+                        <input type="text" id="user-name" name="user-name" placeholder="Name" required>
+
+                        <label for="user-email" class="sr-only">Enter Your Email</label>
+                        <input type="email" id="user-email" name="user-email" placeholder="Email address" required>
+                    </div>
+                    <!-- Eventually can remove cols and rows to style with width and height using CSS-->
+                    <label for="user-message" class="sr-only">Write Your Message</label>
+                    <textarea name="user-message" id="user-message" cols="30" rows="10" placeholder="Message"></textarea>
+
+                    <button type="submit" class="yellow-button">Submit</button>
+                </form>
             </div>
         </div>
-        <form action="submit" method="POST" name="contact-form">
-            <label for="user-name">Enter Your Name</label>
-            <input type="text" id="user-name" name="user-name" placeholder="Name" required>
-
-            <label for="user-email">Enter Your Email</label>
-            <input type="email" id="user-email" name="user-email" placeholder="Email address" required>
-            <!-- Eventually can remove cols and rows to style with width and height using CSS-->
-            <label for="user-message">Write Your Message</label>
-            <textarea name="user-message" id="user-message" cols="30" rows="10" placeholder="Message"></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
     </main>
     <footer>
         <p>Copyright © 2021 Juno College</p>
