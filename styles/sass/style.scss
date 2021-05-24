@@ -58,7 +58,6 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    // height: 75vh;
 }
 
 .header-contact {
@@ -147,6 +146,7 @@ h4 {
     background-color: $secondary;
     text-transform: uppercase;
     line-height: 2.08rem;
+    font-size: 1.1rem;
     padding: 0.5rem;
     border: 3px solid transparent;
     &:hover,
@@ -391,8 +391,8 @@ main {
     justify-content: center;
 }
 
-input,
-textarea {
+.contact-form input,
+.contact-form textarea {
     background-color: $primary;
     border-style: none;
     outline: none;
@@ -400,19 +400,20 @@ textarea {
     color: white;
 }
 
-input[type="text"],
-input[type="email"] {
-    border-bottom: 2px solid $secondary;
-    flex-grow: 1;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    &::placeholder {
-        color: white;
-        opacity: 1;
-        font-family: $base-font;
+.contact-form {
+    input[type="text"],
+    input[type="email"] {
+        border-bottom: 2px solid $secondary;
+        flex-grow: 1;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        &::placeholder {
+            color: white;
+            opacity: 1;
+            font-family: $base-font;
+        }
     }
 }
 
@@ -428,13 +429,197 @@ input[type="email"] {
     padding-bottom: 2rem;
 }
 
-textarea {
+.contact-form textarea {
     resize: none;
     border: 2px solid $secondary;
     margin-bottom: 2rem;
     padding-bottom: 0;
 }
 
+// Blog Page Styling // 
+
+.header-blog h1 {
+    padding-top: 6rem;
+}
+
+.blog-main {
+    background-color: $tertiary;
+}
+
+.main-grid {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    .main-content {
+        grid-column: 2;
+        h2 {
+            padding: 3rem 0 1.25rem 0;
+        }
+    }
+    aside {
+        grid-row-start: 1;
+    }
+}
+
+.blog-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.blog-image-container {
+    position: relative;
+    width: calc(100% - 1rem);
+    img {
+        box-shadow: -1rem 1rem 0.05rem $secondary;
+        position: absolute;
+        top: -20vh;
+        left: 1rem;
+    }
+}
+
+.article-border {
+    padding-top: 40vh;
+    border-left: 5px solid $secondary;
+    border-bottom: 5px solid $secondary;
+    p {
+        padding-bottom: 6rem;
+        span {
+            display: block;
+            padding-bottom: 1.5rem;
+        }
+    }
+}
+
+.comment1, 
+.comment2 {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 2rem;
+}
+
+.comment1 {
+    padding-bottom: 6rem;
+}
+
+.article-comment p span {
+    display: block;
+    color: $primary;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+
+.blog-contact {
+    padding: 4rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    textarea, 
+    .blue-button {
+        grid-column: span 2;
+    }
+}
+
+.blog-contact input,
+.blog-contact textarea {
+    background-color: $tertiary;
+    border-style: none;
+    outline: none;
+    padding: 1rem;
+    color: black;
+}
+
+.blog-contact {
+    input[type="text"],
+    input[type="email"] {
+        border-bottom: 2px solid $secondary;
+        margin-bottom: 2rem;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        &::placeholder {
+            color: black;
+            opacity: 1;
+            font-family: $base-font;
+        }
+    }
+}
+
+.blog-contact textarea {
+    resize: none;
+    border: 2px solid $secondary;
+    margin-bottom: 2rem;
+    padding-bottom: 0;
+}
+
+.blue-button {
+    background-color: $primary;
+    color: $secondary;
+    font-family: $styling-font;
+    text-transform: uppercase;
+    line-height: 2.08rem;
+    font-size: 1.1rem;
+    padding: 0.1rem;
+    border: 3px solid transparent;
+    &:hover,
+    &:focus {
+        background-color: $tertiary;
+        color: $primary;
+        border: 3px solid $secondary;
+    }
+}
+
+.aside-wrapper {
+    width: 65%;
+    margin: 0 auto;
+}
+
+aside {
+    margin-top: 6rem;
+}
+
+.aside-image {
+    position: relative;
+    width: calc(100% - (35% / 2) - 1rem);
+    img {
+        position: absolute;
+        left: 0;
+        top: -1rem;
+    }
+}
+
+.aside-content {
+    background-color: $primary;
+    padding-top: 30vh;
+    h3 {
+        font-family: $styling-font;
+        color: $secondary;
+        font-size: 1.25rem;
+        line-height: 2.08rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+    }
+    p,
+    li {
+        color: white;
+    }
+}
+
+.mission-statement {
+    h3 {
+        padding: 2rem 0 0 1rem;
+    }
+    p {
+        padding-left: 1rem;    
+    }
+}
+
+.recent-posts {
+    padding-bottom: 1rem;
+    h3 {
+    padding: 4rem 0 0 1rem;
+    }
+}
 
 // Footer Styling Across ALL Pages // 
 

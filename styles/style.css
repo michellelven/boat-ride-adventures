@@ -387,6 +387,7 @@ h4 {
   background-color: #FDD908;
   text-transform: uppercase;
   line-height: 2.08rem;
+  font-size: 1.1rem;
   padding: 0.5rem;
   border: 3px solid transparent;
 }
@@ -673,8 +674,8 @@ main {
           justify-content: center;
 }
 
-input,
-textarea {
+.contact-form input,
+.contact-form textarea {
   background-color: #0D457F;
   border-style: none;
   outline: none;
@@ -682,41 +683,36 @@ textarea {
   color: white;
 }
 
-input[type=text],
-input[type=email] {
+.contact-form input[type=text],
+.contact-form input[type=email] {
   border-bottom: 2px solid #FDD908;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-
-input[type=text]::-webkit-input-placeholder, input[type=email]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+.contact-form input[type=text]::-webkit-input-placeholder, .contact-form input[type=email]::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder {
   color: white;
   opacity: 1;
   font-family: "Roboto", sans-serif;
 }
-
-input[type=text]::-moz-placeholder, input[type=email]::-moz-placeholder, textarea::-moz-placeholder {
+.contact-form input[type=text]::-moz-placeholder, .contact-form input[type=email]::-moz-placeholder, .contact-form textarea::-moz-placeholder {
   color: white;
   opacity: 1;
   font-family: "Roboto", sans-serif;
 }
-
-input[type=text]:-ms-input-placeholder, input[type=email]:-ms-input-placeholder, textarea:-ms-input-placeholder {
+.contact-form input[type=text]:-ms-input-placeholder, .contact-form input[type=email]:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder {
   color: white;
   opacity: 1;
   font-family: "Roboto", sans-serif;
 }
-
-input[type=text]::-ms-input-placeholder, input[type=email]::-ms-input-placeholder, textarea::-ms-input-placeholder {
+.contact-form input[type=text]::-ms-input-placeholder, .contact-form input[type=email]::-ms-input-placeholder, .contact-form textarea::-ms-input-placeholder {
   color: white;
   opacity: 1;
   font-family: "Roboto", sans-serif;
 }
-
-input[type=text]::placeholder,
-input[type=email]::placeholder,
-textarea::placeholder {
+.contact-form input[type=text]::placeholder,
+.contact-form input[type=email]::placeholder,
+.contact-form textarea::placeholder {
   color: white;
   opacity: 1;
   font-family: "Roboto", sans-serif;
@@ -734,11 +730,210 @@ input[type=email] {
   padding-bottom: 2rem;
 }
 
-textarea {
+.contact-form textarea {
   resize: none;
   border: 2px solid #FDD908;
   margin-bottom: 2rem;
   padding-bottom: 0;
+}
+
+.header-blog h1 {
+  padding-top: 6rem;
+}
+
+.blog-main {
+  background-color: #EAFEFC;
+}
+
+.main-grid {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.main-grid .main-content {
+  grid-column: 2;
+}
+.main-grid .main-content h2 {
+  padding: 3rem 0 1.25rem 0;
+}
+.main-grid aside {
+  grid-row-start: 1;
+}
+
+.blog-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.blog-image-container {
+  position: relative;
+  width: calc(100% - 1rem);
+}
+.blog-image-container img {
+  -webkit-box-shadow: -1rem 1rem 0.05rem #FDD908;
+          box-shadow: -1rem 1rem 0.05rem #FDD908;
+  position: absolute;
+  top: -20vh;
+  left: 1rem;
+}
+
+.article-border {
+  padding-top: 40vh;
+  border-left: 5px solid #FDD908;
+  border-bottom: 5px solid #FDD908;
+}
+.article-border p {
+  padding-bottom: 6rem;
+}
+.article-border p span {
+  display: block;
+  padding-bottom: 1.5rem;
+}
+
+.comment1,
+.comment2 {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem;
+}
+
+.comment1 {
+  padding-bottom: 6rem;
+}
+
+.article-comment p span {
+  display: block;
+  color: #0D457F;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.blog-contact {
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.blog-contact textarea,
+.blog-contact .blue-button {
+  grid-column: span 2;
+}
+
+.blog-contact input,
+.blog-contact textarea {
+  background-color: #EAFEFC;
+  border-style: none;
+  outline: none;
+  padding: 1rem;
+  color: black;
+}
+
+.blog-contact input[type=text],
+.blog-contact input[type=email] {
+  border-bottom: 2px solid #FDD908;
+  margin-bottom: 2rem;
+}
+.blog-contact input[type=text]::-webkit-input-placeholder, .blog-contact input[type=email]::-webkit-input-placeholder, .blog-contact textarea::-webkit-input-placeholder {
+  color: black;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+}
+.blog-contact input[type=text]::-moz-placeholder, .blog-contact input[type=email]::-moz-placeholder, .blog-contact textarea::-moz-placeholder {
+  color: black;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+}
+.blog-contact input[type=text]:-ms-input-placeholder, .blog-contact input[type=email]:-ms-input-placeholder, .blog-contact textarea:-ms-input-placeholder {
+  color: black;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+}
+.blog-contact input[type=text]::-ms-input-placeholder, .blog-contact input[type=email]::-ms-input-placeholder, .blog-contact textarea::-ms-input-placeholder {
+  color: black;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+}
+.blog-contact input[type=text]::placeholder,
+.blog-contact input[type=email]::placeholder,
+.blog-contact textarea::placeholder {
+  color: black;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+}
+
+.blog-contact textarea {
+  resize: none;
+  border: 2px solid #FDD908;
+  margin-bottom: 2rem;
+  padding-bottom: 0;
+}
+
+.blue-button {
+  background-color: #0D457F;
+  color: #FDD908;
+  font-family: "IM Fell English", serif;
+  text-transform: uppercase;
+  line-height: 2.08rem;
+  font-size: 1.1rem;
+  padding: 0.1rem;
+  border: 3px solid transparent;
+}
+.blue-button:hover, .blue-button:focus {
+  background-color: #EAFEFC;
+  color: #0D457F;
+  border: 3px solid #FDD908;
+}
+
+.aside-wrapper {
+  width: 65%;
+  margin: 0 auto;
+}
+
+aside {
+  margin-top: 6rem;
+}
+
+.aside-image {
+  position: relative;
+  width: calc(100% - (35% / 2) - 1rem);
+}
+.aside-image img {
+  position: absolute;
+  left: 0;
+  top: -1rem;
+}
+
+.aside-content {
+  background-color: #0D457F;
+  padding-top: 30vh;
+}
+.aside-content h3 {
+  font-family: "IM Fell English", serif;
+  color: #FDD908;
+  font-size: 1.25rem;
+  line-height: 2.08rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.aside-content p,
+.aside-content li {
+  color: white;
+}
+
+.mission-statement h3 {
+  padding: 2rem 0 0 1rem;
+}
+.mission-statement p {
+  padding-left: 1rem;
+}
+
+.recent-posts {
+  padding-bottom: 1rem;
+}
+.recent-posts h3 {
+  padding: 4rem 0 0 1rem;
 }
 
 footer {
