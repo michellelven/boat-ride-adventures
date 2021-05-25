@@ -942,3 +942,166 @@ footer {
   color: #0D457F;
   padding: 0.5rem 0;
 }
+
+@media (max-width: 1250px) {
+  .header-home h1 {
+    font-size: 2.75rem;
+  }
+
+  .icons-h2s .wrapper {
+    padding-top: 4rem;
+  }
+
+  .section2-wrapper {
+    gap: 2rem 4rem;
+  }
+  .section2-wrapper h3 {
+    font-size: 1.75rem;
+  }
+  .section2-wrapper p {
+    text-align: center;
+    padding-bottom: 1.5rem;
+  }
+
+  .left-image,
+.right-image,
+.left-image img,
+.right-image img {
+    position: static;
+  }
+
+  .right-programs {
+    text-align: center;
+    padding: 2rem 4rem 2rem 0;
+  }
+
+  .left-locations {
+    text-align: center;
+    padding-left: 4rem;
+  }
+  .left-locations h3 {
+    padding-top: 2rem;
+  }
+
+  .left-image {
+    padding-top: 2rem;
+  }
+
+  .right-image {
+    padding-top: 4rem;
+  }
+
+  .section3-home-vacation h4 {
+    padding-top: 6rem;
+  }
+}
+@media (max-width: 940px) {
+  .header-contact h1,
+.header-blog h1 {
+    font-size: 2.75rem;
+  }
+
+  .icons-h2s .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 2rem;
+  }
+
+  main h2,
+main h4 {
+    font-size: 1.5rem;
+  }
+
+  .header-home h1 {
+    text-align: center;
+    margin: auto;
+  }
+
+  .header-boat-image {
+    position: static;
+    margin: 0 auto;
+    width: 70vw;
+    padding-bottom: 4rem;
+  }
+
+  .icons-h2s .wrapper {
+    padding-bottom: 4rem;
+  }
+
+  .section2-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .left-image img,
+.right-image img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .right-image {
+    grid-row: 3;
+    padding-top: 2rem;
+  }
+
+  .left-image {
+    padding-top: 4rem;
+  }
+
+  .right-programs,
+.left-locations {
+    padding: 2rem 4rem;
+  }
+
+  .section5-home-contest .contest-flex {
+    padding: 3rem 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contest-info {
+    padding: 4rem 2rem 2rem 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .header-home h1 {
+    font-size: 1.75rem;
+  }
+
+  main h2,
+.main-content h2,
+.section2-wrapper h3,
+main h4,
+.main-grid h2 {
+    font-size: 1.25rem;
+  }
+
+  .section2-wrapper {
+    padding-bottom: 1rem;
+  }
+
+  .left-image {
+    padding-top: 2rem;
+  }
+
+  .right-image {
+    padding-top: 0;
+  }
+
+  .right-programs {
+    padding: 0rem 2rem;
+  }
+
+  .left-locations {
+    padding: 0 2rem 1rem 2rem;
+  }
+
+  .left-locations h3 {
+    padding-top: 0;
+  }
+}
