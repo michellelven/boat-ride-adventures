@@ -386,7 +386,6 @@ main {
 
 .name-address-flex {
     display: flex;
-    justify-content: center;
 }
 
 .contact-form input,
@@ -403,6 +402,7 @@ main {
     input[type="email"] {
         border-bottom: 2px solid $secondary;
         flex-grow: 1;
+        width: 100%;
     }
     input[type="text"],
     input[type="email"],
@@ -415,11 +415,11 @@ main {
     }
 }
 
-input[type="text"] {
+.contact-form input[type="text"] {
     margin-right: 0.75rem;
 }
 
-input[type="email"] {
+.contact-form input[type="email"] {
     margin-left: 0.75rem;
 }
 
@@ -511,6 +511,7 @@ input[type="email"] {
     padding: 4rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 1.5rem;
     textarea, 
     .blue-button {
         grid-column: span 2;
@@ -531,6 +532,7 @@ input[type="email"] {
     input[type="email"] {
         border-bottom: 2px solid $secondary;
         margin-bottom: 2rem;
+        width: 100%;
     }
     input[type="text"],
     input[type="email"],
@@ -673,12 +675,96 @@ footer {
     .section3-home-vacation h4 {
         padding-top: 6rem;
     }
+
+    .article-border {
+        padding-top: 30vh;
+    }
+
+    .aside-content {
+        padding-top: 25vh;
+    }
+}
+
+@media (max-width: 1050px) {
+    .move-form {
+        width: 100%;
+        position: static;
+    }
+
+    .contact-form {
+        position: static;
+    }
+
+    .main-contact-form {
+        flex-direction: column;
+        padding: 4rem 0 4rem 0;
+    }
+
+    .contact-info {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact-info .addresses {
+        padding: 0 0 2rem 2rem;
+    }
+
+    .contact-info .contact-icons {
+        padding-right: 2rem;
+    }
+
+    .blog-post {
+        padding-top: 4rem;
+        margin: 0 auto;
+    }
+
+    .blog-image-container,
+    .blog-image-container img {
+        position: static;
+        box-shadow: none;
+    }
+
+    .blog-image-container {
+        padding: 0 2rem;
+        width: 100%;
+    }
+
+    .main-grid {
+        display: initial;
+    }
+
+    .article-border {
+        border-left: none;
+        padding-top: 2rem;
+    }
+
+    aside {
+        background-color: $primary;
+    }
+
+    .aside-image,
+    .aside-image img {
+        display: none;
+    }
+
+    .aside-content {
+        padding-top: 0;
+    }
+
 }
 
 @media (max-width: 940px) {
     .header-contact h1,
     .header-blog h1 {
         font-size: 2.75rem;
+    }
+
+    .header-blog {
+        background-position: 30%;
+        h1 {
+            padding-top: 15rem;
+        }
     }
 
     .icons-h2s .wrapper{
@@ -732,13 +818,55 @@ footer {
         padding: 2rem 4rem;
     }
 
+    .horizontal-banner-image img {
+        height: 40vh;
+        object-fit: cover;
+        object-position: 30%;
+    }
+
     .section5-home-contest .contest-flex {
         padding: 3rem 0;
         flex-direction: column;
     }
+    .section5-home-contest .contest-flex .contest-info {
+        padding: 4rem 1rem 2rem 1rem;
+        text-align: center;
+    }
+    .contact-form {
+        box-shadow: none;
+    }
+}
 
-    .contest-info {
-        padding: 4rem 2rem 2rem 2rem;
+@media (max-width: 600px) {
+    .contact-info {
+        display: initial;
+    }
+
+    .contact-info .addresses {
+        padding-left: 0;
+    }
+
+    .contact-info .contact-icons {
+        padding-right: 0;
+    }
+
+    .name-address-flex {
+        flex-direction: column;
+    }
+
+    input[type="text"] {
+        margin-right: 0;
+    }
+
+    input[type="email"] {
+        margin-left: 0;
+    }
+
+    .blog-contact {
+        grid-template-columns: 1fr;
+        input[type="email"] {
+            grid-row: 2;
+        }
     }
 }
 
@@ -747,12 +875,20 @@ footer {
         font-size: 1.75rem;
     }
 
+    .header-contact {
+        text-align: center;
+    }
+
     main h2,
     .main-content h2,
     .section2-wrapper h3,
     main h4,
     .main-grid h2 {
         font-size: 1.25rem;
+    }
+
+    p {
+        line-height: 1.2rem;
     }
 
     .section2-wrapper {
@@ -777,6 +913,37 @@ footer {
 
     .left-locations h3 {
         padding-top: 0;
+    }
+
+    .section3-home-vacation p {
+        padding: 0 1rem 2rem 1rem;
+    }
+
+    .section5-home-contest .contest-flex .contest-image {
+        box-shadow: none;
+    }
+
+    ul.gallery {
+        grid-template-columns: 1fr;
+        li {
+            padding: 2rem 2rem;
+        }
+    }
+
+    .main-contact-form {
+        padding-top: 2rem;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .blog-wrapper {
+        width: 90%;
+    }
+
+    .aside-wrapper {
+        width: 90%;
     }
 }
 
