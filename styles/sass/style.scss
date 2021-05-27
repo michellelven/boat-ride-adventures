@@ -74,30 +74,42 @@ p {
     height: 75vh;
 }
 
-.nav-home ul,
-.nav-contact ul,
-.nav-blog ul {
-    display: flex;
+.hamburgerMenu {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    a:visited,
+    a:link {
+        color: white;
+    }
+}
+
+.nav-home,
+.nav-contact,
+.nav-blog {
     padding: 3rem 0 4rem 0;
-    li {
-        margin: 0 1.5rem;
-        a {
-            color: white;
-            font-weight: bold;
-            letter-spacing: 0.05rem;
-            line-height: 1.45rem;
-            padding-bottom: 0.25rem;
-            &:hover,
-            &:focus {
-                border-bottom: 3px solid $secondary;
+    ul {
+        display: flex;
+        li {
+            margin: 0 1.5rem;
+            a {
+                color: white;
+                font-weight: bold;
+                letter-spacing: 0.05rem;
+                line-height: 1.45rem;
+                padding-bottom: 0.25rem;
+                &:hover,
+                &:focus {
+                    border-bottom: 3px solid $secondary;
+                }
             }
         }
-    }
-    li:first-child {
-        margin-left: 0;
-    }
-    li:last-child {
-        margin-right: 0;
+        li:first-child {
+            margin-left: 0;
+        }
+        li:last-child {
+            margin-right: 0;
+        }    
     }
 }
 
@@ -838,6 +850,27 @@ footer {
 }
 
 @media (max-width: 600px) {
+    .header-contact h1 {
+        padding-top: 10rem;
+    }
+
+    .nav-home,
+    .nav-contact,
+    .nav-blog {
+        padding: 2rem 0 0 1rem;
+        ul {
+            display: none;
+        }
+    }
+    
+    .hamburgerMenu {
+        display: initial;        
+        a:hover,
+        a:focus {
+            color: $secondary;
+        }
+    }
+
     .contact-info {
         display: initial;
     }
@@ -875,7 +908,7 @@ footer {
         font-size: 1.75rem;
     }
 
-    .header-contact {
+    .header-contact h1 {
         text-align: center;
     }
 

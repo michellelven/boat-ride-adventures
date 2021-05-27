@@ -304,13 +304,27 @@ p {
   height: 75vh;
 }
 
+.hamburgerMenu {
+  display: none;
+  font-size: 2rem;
+  color: white;
+}
+.hamburgerMenu a:visited,
+.hamburgerMenu a:link {
+  color: white;
+}
+
+.nav-home,
+.nav-contact,
+.nav-blog {
+  padding: 3rem 0 4rem 0;
+}
 .nav-home ul,
 .nav-contact ul,
 .nav-blog ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 3rem 0 4rem 0;
 }
 .nav-home ul li,
 .nav-contact ul li,
@@ -1176,6 +1190,29 @@ main h4 {
   }
 }
 @media (max-width: 600px) {
+  .header-contact h1 {
+    padding-top: 10rem;
+  }
+
+  .nav-home,
+.nav-contact,
+.nav-blog {
+    padding: 2rem 0 0 1rem;
+  }
+  .nav-home ul,
+.nav-contact ul,
+.nav-blog ul {
+    display: none;
+  }
+
+  .hamburgerMenu {
+    display: initial;
+  }
+  .hamburgerMenu a:hover,
+.hamburgerMenu a:focus {
+    color: #FDD908;
+  }
+
   .contact-info {
     display: initial;
   }
@@ -1215,7 +1252,7 @@ main h4 {
     font-size: 1.75rem;
   }
 
-  .header-contact {
+  .header-contact h1 {
     text-align: center;
   }
 
