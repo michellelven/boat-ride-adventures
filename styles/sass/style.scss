@@ -489,7 +489,7 @@ main {
 }
 
 .article-border {
-    padding-top: 40vh;
+    padding-top: 25rem;
     border-left: 5px solid $secondary;
     border-bottom: 5px solid $secondary;
     p {
@@ -602,7 +602,7 @@ aside {
 
 .aside-content {
     background-color: $primary;
-    padding-top: 30vh;
+    padding-top: 18rem;
     h3 {
         font-family: $styling-font;
         color: $secondary;
@@ -689,11 +689,11 @@ footer {
     }
 
     .article-border {
-        padding-top: 30vh;
+        padding-top: 15rem;
     }
 
     .aside-content {
-        padding-top: 25vh;
+        padding-top: 14rem;
     }
 }
 
@@ -887,16 +887,17 @@ footer {
         flex-direction: column;
     }
 
-    input[type="text"] {
+    .contact-form input[type="text"] {
         margin-right: 0;
     }
 
-    input[type="email"] {
+    .contact-form input[type="email"] {
         margin-left: 0;
     }
 
     .blog-contact {
         grid-template-columns: 1fr;
+        column-gap: 0;
         input[type="email"] {
             grid-row: 2;
         }
