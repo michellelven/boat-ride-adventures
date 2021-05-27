@@ -74,13 +74,37 @@ p {
     height: 75vh;
 }
 
-.hamburgerMenu {
-    display: none;
-    font-size: 2rem;
-    color: white;
-    a:visited,
-    a:link {
+.nav-home,
+.nav-contact,
+.nav-blog {
+    position: relative;
+}
+
+.nav-home,
+.nav-contact,
+.nav-blog {
+    input[type="checkbox"] {
+        display: none;
+        width: 40px;
+        height: 40px;
+        z-index: 10;
+        opacity: 0;
+        position: absolute;
+    }
+}
+
+.nav-home,
+.nav-contact,
+.nav-blog {
+    .hamburger {
+        display: none;
+        font-size: 2rem;
         color: white;
+        position: absolute;
+        &:visited,
+        &:link {
+            color:white;
+        }
     }
 }
 
@@ -860,14 +884,35 @@ footer {
         padding: 2rem 0 0 1rem;
         ul {
             display: none;
+            padding-top: 3rem;
+            li {
+                margin-left: 0;
+                padding-bottom: 0.25rem;
+            }
         }
     }
-    
-    .hamburgerMenu {
-        display: initial;        
-        a:hover,
-        a:focus {
-            color: $secondary;
+
+    .nav-home,
+    .nav-contact,
+    .nav-blog {
+        input[type="checkbox"] {
+            display: initial;
+            cursor: pointer;
+            &:checked ~ ul {
+                display: flex;
+                flex-direction: column;
+            }
+            &:focus + .hamburger {
+                color: $secondary;
+            }
+        }
+    }
+
+    .nav-home,
+    .nav-contact,
+    .nav-blog {
+        .hamburger {
+            display: initial;
         }
     }
 
@@ -907,6 +952,7 @@ footer {
 @media (max-width: 480px) {
     .header-home h1 {
         font-size: 1.75rem;
+        padding-top: 2.5rem;
     }
 
     .header-contact h1 {

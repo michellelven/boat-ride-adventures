@@ -304,13 +304,36 @@ p {
   height: 75vh;
 }
 
-.hamburgerMenu {
+.nav-home,
+.nav-contact,
+.nav-blog {
+  position: relative;
+}
+
+.nav-home input[type=checkbox],
+.nav-contact input[type=checkbox],
+.nav-blog input[type=checkbox] {
+  display: none;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  opacity: 0;
+  position: absolute;
+}
+
+.nav-home .hamburger,
+.nav-contact .hamburger,
+.nav-blog .hamburger {
   display: none;
   font-size: 2rem;
   color: white;
+  position: absolute;
 }
-.hamburgerMenu a:visited,
-.hamburgerMenu a:link {
+.nav-home .hamburger:visited, .nav-home .hamburger:link,
+.nav-contact .hamburger:visited,
+.nav-contact .hamburger:link,
+.nav-blog .hamburger:visited,
+.nav-blog .hamburger:link {
   color: white;
 }
 
@@ -1203,14 +1226,42 @@ main h4 {
 .nav-contact ul,
 .nav-blog ul {
     display: none;
+    padding-top: 3rem;
+  }
+  .nav-home ul li,
+.nav-contact ul li,
+.nav-blog ul li {
+    margin-left: 0;
+    padding-bottom: 0.25rem;
   }
 
-  .hamburgerMenu {
+  .nav-home input[type=checkbox],
+.nav-contact input[type=checkbox],
+.nav-blog input[type=checkbox] {
     display: initial;
+    cursor: pointer;
   }
-  .hamburgerMenu a:hover,
-.hamburgerMenu a:focus {
+  .nav-home input[type=checkbox]:checked ~ ul,
+.nav-contact input[type=checkbox]:checked ~ ul,
+.nav-blog input[type=checkbox]:checked ~ ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav-home input[type=checkbox]:focus + .hamburger,
+.nav-contact input[type=checkbox]:focus + .hamburger,
+.nav-blog input[type=checkbox]:focus + .hamburger {
     color: #FDD908;
+  }
+
+  .nav-home .hamburger,
+.nav-contact .hamburger,
+.nav-blog .hamburger {
+    display: initial;
   }
 
   .contact-info {
@@ -1253,6 +1304,7 @@ main h4 {
 @media (max-width: 480px) {
   .header-home h1 {
     font-size: 1.75rem;
+    padding-top: 2.5rem;
   }
 
   .header-contact h1 {
