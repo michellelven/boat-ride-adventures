@@ -874,8 +874,20 @@ footer {
 }
 
 @media (max-width: 600px) {
+    .header-contact {
+        height: inherit;
+    }
+
+    .header-blog {
+        height: inherit;
+    }
+
     .header-contact h1 {
-        padding-top: 10rem;
+        padding: 10rem 0;
+    }
+
+    .header-blog h1 {
+        padding-bottom: 10rem;
     }
 
     .nav-home,
