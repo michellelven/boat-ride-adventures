@@ -750,6 +750,12 @@ main {
   margin-left: 0.75rem;
 }
 
+.contact-form input[type=text].invalid,
+.contact-form input[type=email].invalid,
+.contact-form textarea.invalid {
+  border-bottom: 2px solid red;
+}
+
 .name-address-flex {
   padding-bottom: 2rem;
 }
@@ -889,6 +895,12 @@ main {
   color: black;
   opacity: 1;
   font-family: "Roboto", sans-serif;
+}
+
+.blog-contact input[type=text].invalid,
+.blog-contact input[type=email].invalid,
+.blog-contact textarea.invalid {
+  border-bottom: 2px solid red;
 }
 
 .blog-contact textarea {
